@@ -38,6 +38,9 @@ jobs:
           if [ -n "${{ github.event.inputs.days }}" ]; then
             echo "days=${{ github.event.inputs.days }}" >> "$GITHUB_OUTPUT"
             echo "max=${{ github.event.inputs.max }}" >> "$GITHUB_OUTPUT"
+          elif [ ! -d papers ]; then
+            echo "days=14" >> "$GITHUB_OUTPUT"  # first run: backfill two weeks
+            echo "max=60" >> "$GITHUB_OUTPUT"
           elif [ "$(TZ=Asia/Seoul date +%u)" = "1" ]; then
             echo "days=4" >> "$GITHUB_OUTPUT"   # Monday covers the weekend
             echo "max=15" >> "$GITHUB_OUTPUT"
