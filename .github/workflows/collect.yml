@@ -1,0 +1,63 @@
+name: Collect KG/Ontology papers
+
+on:
+  schedule:
+    # 06:30 KST on weekdays (21:30 UTC Sun-Thu)
+    - cron: "30 21 * * 0-4"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Look back this many days (use 14 for a backfill)"
+        default: "3"
+      max:
+        description: "Max papers to add per run"
+        default: "15"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pymupdf
+
+      - name: Decide look-back window
+        id: win
+        run: |
+          if [ -n "${{ github.event.inputs.days }}" ]; then
+            echo "days=${{ github.event.inputs.days }}" >> "$GITHUB_OUTPUT"
+            echo "max=${{ github.event.inputs.max }}" >> "$GITHUB_OUTPUT"
+          elif [ "$(TZ=Asia/Seoul date +%u)" = "1" ]; then
+            echo "days=4" >> "$GITHUB_OUTPUT"   # Monday covers the weekend
+            echo "max=15" >> "$GITHUB_OUTPUT"
+          else
+            echo "days=3" >> "$GITHUB_OUTPUT"
+            echo "max=15" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Collect papers
+        run: python scripts/collect_papers.py --days "${{ steps.win.outputs.days }}" --max "${{ steps.win.outputs.max }}"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers index.md
+          if git diff --cached --quiet; then
+            echo "No new papers."
+            exit 0
+          fi
+          n=$(git diff --cached --name-only | grep -c 'README.md$' || true)
+          git commit -m "papers: add ${n} papers ($(TZ=Asia/Seoul date +%F))"
+          git push
