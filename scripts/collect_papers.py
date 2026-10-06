@@ -75,6 +75,7 @@ def search(query, cutoff, max_results=100):
     q = urllib.parse.quote(f"({query}) AND {CATS}")
     url = f"{API}?search_query={q}&sortBy=submittedDate&sortOrder=descending&start=0&max_results={max_results}"
     root = ET.fromstring(fetch(url))
+    total = len(root.findall("a:entry", NS))
     out = []
     for e in root.findall("a:entry", NS):
         aid_full = e.find("a:id", NS).text.rsplit("/", 1)[-1]
@@ -95,6 +96,7 @@ def search(query, cutoff, max_results=100):
                 "updated": updated,
             }
         )
+    print(f"query ok: {query}: {total} returned, {len(out)} within window")
     return out
 
 
@@ -223,7 +225,7 @@ def update_index(rows):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--days", type=int, default=3)
+    ap.add_argument("--days", type=int, default=5)
     ap.add_argument("--max", type=int, default=15)
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
@@ -239,7 +241,6 @@ def main():
             hits = search(q, cutoff)
             for p in hits:
                 cands.setdefault(p["id"], p)
-            print(f"query ok: {q}: {len(hits)} within window")
         except Exception as e:  # noqa: BLE001
             print(f"query failed: {q}: {e}", file=sys.stderr)
         time.sleep(3)  # arXiv API etiquette

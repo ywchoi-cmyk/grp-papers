@@ -8,7 +8,7 @@ on:
     inputs:
       days:
         description: "Look back this many days (use 14 for a backfill)"
-        default: "3"
+        default: "5"
       max:
         description: "Max papers to add per run"
         default: "15"
@@ -42,10 +42,10 @@ jobs:
             echo "days=14" >> "$GITHUB_OUTPUT"  # first run: backfill two weeks
             echo "max=60" >> "$GITHUB_OUTPUT"
           elif [ "$(TZ=Asia/Seoul date +%u)" = "1" ]; then
-            echo "days=4" >> "$GITHUB_OUTPUT"   # Monday covers the weekend
+            echo "days=7" >> "$GITHUB_OUTPUT"   # Monday covers the weekend
             echo "max=15" >> "$GITHUB_OUTPUT"
           else
-            echo "days=3" >> "$GITHUB_OUTPUT"
+            echo "days=5" >> "$GITHUB_OUTPUT"
             echo "max=15" >> "$GITHUB_OUTPUT"
           fi
 
