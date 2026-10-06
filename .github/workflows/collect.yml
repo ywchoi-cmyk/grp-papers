@@ -56,7 +56,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add papers index.md
+          [ -d papers ] && git add papers
+          [ -f index.md ] && git add index.md
           if git diff --cached --quiet; then
             echo "No new papers."
             exit 0

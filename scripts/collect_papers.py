@@ -236,8 +236,10 @@ def main():
     cands = {}
     for q in QUERIES:
         try:
-            for p in search(q, cutoff):
+            hits = search(q, cutoff)
+            for p in hits:
                 cands.setdefault(p["id"], p)
+            print(f"query ok: {q}: {len(hits)} within window")
         except Exception as e:  # noqa: BLE001
             print(f"query failed: {q}: {e}", file=sys.stderr)
         time.sleep(3)  # arXiv API etiquette
