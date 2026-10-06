@@ -4,7 +4,6 @@
 
 - `papers/YYYY-MM/<arxivID>_<slug>/README.md` — 제목, 저자, 링크, abstract
 - `papers/YYYY-MM/<arxivID>_<slug>/fig1.png` — 논문의 Figure 1
-- `papers/YYYY-MM/<arxivID>_<slug>/summary.md` — 한국어 요약 (문제·접근·결과·키워드·참고 포인트), 평일 07:12 KST Claude 예약 작업이 작성
 - `index.md` — 수집 목록 (최신순)
 
 ## 수집 방식
