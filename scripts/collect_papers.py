@@ -74,11 +74,20 @@ def fetch(url, retries=4, binary=False):
 def search(query, cutoff, max_results=100):
     q = urllib.parse.quote(f"({query}) AND {CATS}")
     url = f"{API}?search_query={q}&sortBy=submittedDate&sortOrder=descending&start=0&max_results={max_results}"
-    root = ET.fromstring(fetch(url))
-    total = len(root.findall("a:entry", NS))
+    entries, total = [], "?"
+    for attempt in range(4):  # arXiv API often returns an empty feed on the first request
+        root = ET.fromstring(fetch(url))
+        total = root.findtext("{http://a9.com/-/spec/opensearch/1.1/}totalResults", "?")
+        entries = root.findall("a:entry", NS)
+        if entries:
+            break
+        time.sleep(5 * (attempt + 1))
     out = []
-    for e in root.findall("a:entry", NS):
-        aid_full = e.find("a:id", NS).text.rsplit("/", 1)[-1]
+    for e in entries:
+        id_text = e.find("a:id", NS).text
+        if "api/errors" in id_text:
+            raise RuntimeError(e.findtext("a:summary", "", NS))
+        aid_full = id_text.rsplit("/", 1)[-1]
         aid = re.sub(r"v\d+$", "", aid_full)
         published = dt.datetime.fromisoformat(e.find("a:published", NS).text.replace("Z", "+00:00"))
         updated = dt.datetime.fromisoformat(e.find("a:updated", NS).text.replace("Z", "+00:00"))
@@ -96,7 +105,45 @@ def search(query, cutoff, max_results=100):
                 "updated": updated,
             }
         )
-    print(f"query ok: {query}: {total} returned, {len(out)} within window")
+    print(f"query ok: {query}: totalResults={total}, {len(entries)} returned, {len(out)} within window")
+    return out
+
+
+def rss_fallback(cutoff):
+    """arXiv's daily announcement feed per category — used when the API yields nothing."""
+    url = "https://rss.arxiv.org/rss/cs.AI+cs.CL+cs.DB+cs.IR+cs.LG"
+    root = ET.fromstring(fetch(url))
+    out = []
+    for item in root.iter("item"):
+        link = item.findtext("link", "")
+        m = re.search(r"(\d{4}\.\d{4,5})(v\d+)?", link)
+        if not m:
+            continue
+        title = " ".join((item.findtext("title") or "").split())
+        desc = " ".join((item.findtext("description") or "").split())
+        desc = re.sub(r"^arXiv:\S+\s+Announce Type:\s*\w+\s*Abstract:\s*", "", desc)
+        if not CORE.search(title + " " + desc):
+            continue
+        pub = item.findtext("pubDate")
+        try:
+            published = dt.datetime.strptime(pub, "%a, %d %b %Y %H:%M:%S %z")
+        except Exception:  # noqa: BLE001
+            published = dt.datetime.now(dt.timezone.utc)
+        creator = item.findtext("{http://purl.org/dc/elements/1.1/}creator") or ""
+        cats = [c.text for c in item.findall("category") if c.text]
+        out.append(
+            {
+                "id": m.group(1),
+                "version": m.group(1) + (m.group(2) or "v1"),
+                "title": title,
+                "summary": desc,
+                "authors": [a.strip() for a in creator.split(",") if a.strip()],
+                "categories": cats or ["cs.AI"],
+                "published": published,
+                "updated": published,
+            }
+        )
+    print(f"rss fallback: {len(out)} KG/ontology items in today's listing")
     return out
 
 
@@ -312,6 +359,14 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"query failed: {q}: {e}", file=sys.stderr)
         time.sleep(3)  # arXiv API etiquette
+
+    if not cands:
+        print("API returned nothing for every query; falling back to the daily RSS listing", file=sys.stderr)
+        try:
+            for p in rss_fallback(cutoff):
+                cands.setdefault(p["id"], p)
+        except Exception as e:  # noqa: BLE001
+            print(f"rss fallback failed: {e}", file=sys.stderr)
 
     skipped = [p for p in cands.values() if p["id"] in known]
     fresh = [p for p in cands.values() if p["id"] not in known]
