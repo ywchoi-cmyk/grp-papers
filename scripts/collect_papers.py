@@ -49,12 +49,12 @@ QUERIES = [
 
 # Strong signals that the paper is actually about KG / ontology (not a passing mention)
 CORE = re.compile(
-    r"knowledge[- ]graph|ontolog|graphrag|sparql|\browl\b|\brdf\b|semantic web|"
+    r"knowledge[- ]graph|ontolog(?:y|ies)\b|ontology-|graphrag|sparql|\browl\b|\brdf\b|semantic web|"
     r"entity alignment|link prediction|knowledge base|kgqa|cypher|triple store|"
     r"knowledge graph embedding|taxonom",
     re.I,
 )
-EXCLUDE = re.compile(r"gene ontology|\bGO terms?\b", re.I)
+EXCLUDE = re.compile(r"gene ontology|\bGO terms?\b|ontological argument|ontological instability", re.I)
 
 
 def fetch(url, retries=4, binary=False):
@@ -153,6 +153,8 @@ def relevance(p):
         return 0
     title_hits = len(CORE.findall(p["title"]))
     abs_hits = len(CORE.findall(p["summary"]))
+    if title_hits == 0 and abs_hits < 2:
+        return 0
     return title_hits * 3 + abs_hits
 
 
