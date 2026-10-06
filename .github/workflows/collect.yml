@@ -12,6 +12,10 @@ on:
       max:
         description: "Max papers to add per run"
         default: "15"
+      refig:
+        description: "Re-extract fig1.png for all existing papers instead of collecting"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -50,7 +54,12 @@ jobs:
           fi
 
       - name: Collect papers
+        if: github.event.inputs.refig != 'true'
         run: python scripts/collect_papers.py --days "${{ steps.win.outputs.days }}" --max "${{ steps.win.outputs.max }}"
+
+      - name: Re-extract Figure 1 for existing papers
+        if: github.event.inputs.refig == 'true'
+        run: python scripts/collect_papers.py --refig
 
       - name: Commit and push
         run: |
@@ -62,6 +71,10 @@ jobs:
             echo "No new papers."
             exit 0
           fi
-          n=$(git diff --cached --name-only | grep -c 'README.md$' || true)
-          git commit -m "papers: add ${n} papers ($(TZ=Asia/Seoul date +%F))"
+          if [ "${{ github.event.inputs.refig }}" = "true" ]; then
+            git commit -m "papers: re-extract Figure 1 ($(TZ=Asia/Seoul date +%F))"
+          else
+            n=$(git diff --cached --name-only | grep -c 'README.md$' || true)
+            git commit -m "papers: add ${n} papers ($(TZ=Asia/Seoul date +%F))"
+          fi
           git push

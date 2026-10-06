@@ -127,55 +127,90 @@ def slugify(title, n=60):
 
 
 def find_caption(page):
-    """Return bbox of the 'Figure 1' / 'Fig. 1' caption block on this page, or None."""
+    """Return (bbox, text) of the 'Figure 1' / 'Fig. 1' caption block on this page, or None."""
     for b in page.get_text("blocks"):
-        txt = b[4].strip()
-        if re.match(r"^(Figure|Fig\.?)\s*1\b[:.\s]", txt, re.I):
+        if b[6] != 0:  # image block
+            continue
+        txt = " ".join(b[4].split())
+        if re.match(r"^(Figure|Fig\.?)\s*1\s*[:.|\u2014\u2013-]", txt, re.I):
             return pymupdf.Rect(b[:4]), txt
     return None
+
+
+def body_text_blocks(page):
+    """Text blocks that look like running body text (wide, multi-line) rather than figure labels."""
+    out = []
+    pw = page.rect.width
+    for b in page.get_text("blocks"):
+        if b[6] != 0:
+            continue
+        r = pymupdf.Rect(b[:4])
+        lines = b[4].count("\n") + 1
+        if r.width > pw * 0.25 and (lines >= 2 or r.height > 22):
+            out.append(r)
+    return out
+
+
+def figure_clip(page, cap):
+    """Figure region directly above the caption, bounded by the nearest body-text block."""
+    pw, ph = page.rect.width, page.rect.height
+    full_width = cap.width > pw * 0.55
+    x0, x1 = (0, pw) if full_width else (cap.x0 - 6, cap.x1 + 6)
+    top = 0.0
+    for r in body_text_blocks(page):
+        if r.y1 <= cap.y0 + 1 and r != cap and r.x1 > x0 + 20 and r.x0 < x1 - 20:
+            # ignore blocks that sit inside the caption itself
+            if abs(r.y0 - cap.y0) < 2:
+                continue
+            top = max(top, r.y1)
+    clip = pymupdf.Rect(x0, top + 2, x1, cap.y0 - 2)
+    # Tighten to the drawn / imaged content inside that band
+    content = None
+    for info in page.get_image_info():
+        r = pymupdf.Rect(info["bbox"]) & clip
+        if r.width > 15 and r.height > 15:
+            content = r if content is None else content | r
+    for d in page.get_drawings():
+        r = d.get("rect")
+        if r is None:
+            continue
+        r = r & clip
+        if r.width > 3 and r.height > 3:
+            content = r if content is None else content | r
+    for b in page.get_text("blocks"):
+        r = pymupdf.Rect(b[:4]) & clip
+        if r.width > 3 and r.height > 3 and content is not None and content.intersects(r):
+            content |= r  # axis labels / node text inside the figure
+    if content is not None and content.height > 30 and content.width > 30:
+        clip = pymupdf.Rect(content.x0 - 4, content.y0 - 4, content.x1 + 4, content.y1 + 4) & clip
+    return clip & page.rect
 
 
 def extract_fig1(pdf_bytes, out_path):
     """Save Figure 1 as PNG. Returns (ok, caption)."""
     doc = pymupdf.open(stream=pdf_bytes, filetype="pdf")
-    cap_text = ""
-    for pno in range(min(5, len(doc))):
+    for pno in range(min(6, len(doc))):
         page = doc[pno]
         hit = find_caption(page)
         if not hit:
             continue
         cap, cap_text = hit
-        pw, ph = page.rect.width, page.rect.height
-        # Candidate region: everything above the caption, within the caption's column span
-        region = pymupdf.Rect(cap.x0 - 10, max(0, cap.y0 - ph * 0.55), cap.x1 + 10, cap.y0 - 2)
-        # Prefer the union of image / drawing blocks that sit inside the region
-        boxes = []
-        for info in page.get_image_info():
-            r = pymupdf.Rect(info["bbox"])
-            if r.intersects(region) and r.height > 20 and r.width > 20:
-                boxes.append(r)
-        for d in page.get_drawings():
-            r = d.get("rect")
-            if r and r.intersects(region) and r.height > 5 and r.width > 5:
-                boxes.append(r)
-        if boxes:
-            clip = boxes[0]
-            for r in boxes[1:]:
-                clip |= r
-            clip = clip & pymupdf.Rect(0, 0, pw, cap.y0)
-            # Trim obvious text lines that crept in above the figure
-            if clip.height < 30 or clip.width < 30:
-                clip = region
-        else:
-            clip = region
-        clip = clip & page.rect
-        pix = page.get_pixmap(dpi=200, clip=clip)
-        pix.save(out_path)
+        clip = figure_clip(page, cap)
+        if clip.height < 40 or clip.width < 60:
+            # Caption found but nothing above it (figure may be on the previous page top)
+            if pno > 0:
+                prev = doc[pno - 1]
+                clip2 = figure_clip(prev, pymupdf.Rect(0, prev.rect.height - 1, prev.rect.width, prev.rect.height))
+                if clip2.height >= 40:
+                    prev.get_pixmap(dpi=200, clip=clip2).save(out_path)
+                    return True, cap_text
+            break
+        page.get_pixmap(dpi=200, clip=clip).save(out_path)
         return True, cap_text
     # Fallback: largest embedded image on the first two pages
     best = None
     for pno in range(min(2, len(doc))):
-        for info in doc[pno].get_image_info(xrefs=True):
+        for info in doc[pno].get_image_info():
             r = pymupdf.Rect(info["bbox"])
             if best is None or r.get_area() > best[1].get_area():
                 best = (pno, r)
@@ -223,12 +258,45 @@ def update_index(rows):
     INDEX.write_text(header + "".join(rows) + body, encoding="utf-8")
 
 
+def refig():
+    ok = fail = 0
+    for folder in sorted(PAPERS.glob("*/*")):
+        m = re.match(r"(\d{4}\.\d{4,5})_", folder.name)
+        readme = folder / "README.md"
+        if not m or not readme.exists():
+            continue
+        aid = m.group(1)
+        try:
+            pdf = fetch(f"https://arxiv.org/pdf/{aid}", binary=True)
+            good, caption = extract_fig1(pdf, str(folder / "fig1.png"))
+        except Exception as e:  # noqa: BLE001
+            print(f"  refig failed {aid}: {e}", file=sys.stderr)
+            good, caption = False, ""
+        text = readme.read_text(encoding="utf-8")
+        head, _, _ = text.partition("## Figure 1")
+        tail = ""
+        if "## Summary" in text:
+            tail = "## Summary" + text.split("## Summary", 1)[1]
+        fig_section = "![Figure 1](fig1.png)\n" + (f"\n{caption}\n" if caption else "") if good \
+            else "Figure 1: 추출 실패 (PDF 참조)\n"
+        if not good and (folder / "fig1.png").exists():
+            (folder / "fig1.png").unlink()
+        readme.write_text(head + "## Figure 1\n\n" + fig_section + ("\n" + tail if tail else ""), encoding="utf-8")
+        ok += good; fail += (not good)
+        print(f"  {aid} {'[fig1]' if good else '[no fig1]'}")
+        time.sleep(1)
+    print(f"refig done: ok={ok} fail={fail}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=5)
     ap.add_argument("--max", type=int, default=15)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--refig", action="store_true", help="re-extract fig1.png for every existing paper folder")
     args = ap.parse_args()
+    if args.refig:
+        return refig()
 
     now = dt.datetime.now(dt.timezone.utc)
     now_kst = now.astimezone(KST)
