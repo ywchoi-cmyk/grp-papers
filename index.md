@@ -2,6 +2,7 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-10-12 | 2610.11768 | Narrow and Deep: An Ontology Tower as the Knowledge of an LLM Agent for an Industrial Equipment System | eess.SY, cs.AI | [2610.11768_narrow-and-deep-an-ontology-tower-as-the-knowledge-of-an-llm](papers/2026-10/2610.11768_narrow-and-deep-an-ontology-tower-as-the-knowledge-of-an-llm) |
 | 2026-10-09 | 2610.11701 | Traveling with a Map: Reducing the Search Space of Link Traversal Queries Using RDF Shapes | cs.DB | [2610.11701_traveling-with-a-map-reducing-the-search-space-of-link-trave](papers/2026-10/2610.11701_traveling-with-a-map-reducing-the-search-space-of-link-trave) |
 | 2026-10-09 | 2610.09644 | Automatically Building and Updating a Knowledge Graph of MLIP Models | cs.AI | [2610.09644_automatically-building-and-updating-a-knowledge-graph-of-mli](papers/2026-10/2610.09644_automatically-building-and-updating-a-knowledge-graph-of-mli) |
 | 2026-10-09 | 2610.09643 | CircuitATLAS: Agentic reasoning over a systems neuroscience knowledge graph for target discovery in circuitopathies | q-bio.QM, cs.AI, q-bio.NC | [2610.09643_circuitatlas-agentic-reasoning-over-a-systems-neuroscience-k](papers/2026-10/2610.09643_circuitatlas-agentic-reasoning-over-a-systems-neuroscience-k) |
