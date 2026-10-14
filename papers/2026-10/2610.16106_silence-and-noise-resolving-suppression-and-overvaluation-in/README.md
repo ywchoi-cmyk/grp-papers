@@ -1,0 +1,16 @@
+# Silence and Noise: Resolving Suppression and Overvaluation in Multimodal Entity Alignment
+
+- arXiv: https://arxiv.org/abs/2610.16106  (v1, submitted 2026-10-12, updated 2026-10-12)
+- Authors: Xizhe Zhang, Jingfeng Zhang, Meng-Fen Chiang
+- Categories: cs.LG
+- Collected: 2026-10-15 (KST)
+
+## Abstract
+
+Multimodal entity alignment (MMEA) is fundamental to integrating heterogeneous knowledge graphs (KGs), yet existing paradigms remain critically vulnerable to incomplete modalities and cross-graph structural asymmetries. This paper exposes a fundamental oversight in current MMEA research: treating feature missingness and topological discrepancies as isolated preprocessing or denoising challenges, which overlooks their destructive coupling during multimodal fusion. We systematically formulate and evaluate two newly identified failure modes: 1) Detail Missing (DM)-induced overvaluation, where the absence of local modality details causes models to overemphasize uninformative, blurred representations; and 2) Context Imbalance (CI)-induced suppression, where topological discrepancies across KGs allow dense structural contexts to overwhelm weaker but highly discriminative modal signals, triggering high-level semantic drift. To break this cycle of degradation, we introduce ALMEA, a generative and calibration framework that establishes a bidirectional feedback loop between low-level feature reconstruction and high-level latent space alignment. Specifically, Cross-Modality Imputation (CMI) synthesizes missing modality details to mitigate overvaluation, while Latent Semantic Calibration (LSC) aligns cross-graph joint embeddings to suppress topology-driven semantic drift. Under sparse supervision, we develop Controlled Iterative Selection (CIS) to adaptively acquire representative and diverse pseudo-labeled pairs, optimizing latent calibration under constrained budgets. Extensive evaluations on standard benchmarks demonstrate that ALMEA consistently outperforms state-of-the-art baselines. At a 20% supervision rate, ALMEA yields substantial absolute improvements of up to 5.20% in MRR and 6.40% in Hits@1, maintaining robust gains across higher supervision thresholds.
+
+## Figure 1
+
+![Figure 1](fig1.png)
+
+Figure 1: Overview of DM/CI challenges in MMEA benchmarks and the proposed ALMEA framework. Top: Two illustrative aligned entity pairs with Detail Missing (DM) and Context Imbalance (CI). “x” denotes a missing modality, and CI is mea- sured using the modality-wise contextual discrepancies Δ(𝑔, 𝑟, 𝑎) between ground-truth pairs across the source and target KGs. Middle: Dataset statistics on FB15K-DB15K and FB15K-YAGO15K: overall DM rates for visual/attribute modalities (left) and CI distributions over all ground-truth pairs (middle/right), grouped into Low/Mid/High regions by the averaged discrepancy score. Bottom: Our solutions to DM and CI. Entities are fused into joint embeddings (ℎ𝑖, ℎ𝑗) with modality weights 𝜋𝑚for nearest-neighbor retrieval. Cross-Modality Imputation (CMI) restores missing low-level details via a conditional VAE to mit- igate DM-induced overvaluation, whereas Latent Semantic Calibration (LSC) aligns latent semantics across KGs to alleviate CI-induced suppression.
