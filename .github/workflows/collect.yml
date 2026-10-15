@@ -2,8 +2,9 @@ name: Collect KG/Ontology papers
 
 on:
   schedule:
-    # 06:30 KST on weekdays (21:30 UTC Sun-Thu)
-    - cron: "19 21 * * 0-4"
+    - cron: "37 16 * * 0-4"   # 01:37 KST
+    - cron: "13 19 * * 0-4"   # 04:13 KST
+    - cron: "49 21 * * 0-4"   # 06:49 KST
   workflow_dispatch:
     inputs:
       days:
