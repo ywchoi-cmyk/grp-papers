@@ -2,6 +2,9 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-10-16 | 2610.19754 | Beyond Reachability: A Relation-Semantic Reasoning Framework for Biomedical Multi-hop QA | cs.CL | [2610.19754_beyond-reachability-a-relation-semantic-reasoning-framework](papers/2026-10/2610.19754_beyond-reachability-a-relation-semantic-reasoning-framework) |
+| 2026-10-16 | 2610.19549 | GraphRAG-LTM: A Layered Threat Modeling Framework for Attacks on Graph Retrieval-Augmented Generation | cs.CL | [2610.19549_graphrag-ltm-a-layered-threat-modeling-framework-for-attacks](papers/2026-10/2610.19549_graphrag-ltm-a-layered-threat-modeling-framework-for-attacks) |
+| 2026-10-16 | 2610.19131 | Plant Memory: Technical Language Processing and a Verified Maintenance Ontology for Agent-Accessible Failure Knowledge from SAP PM Work Orders | cs.AI, cs.CL | [2610.19131_plant-memory-technical-language-processing-and-a-verified-ma](papers/2026-10/2610.19131_plant-memory-technical-language-processing-and-a-verified-ma) |
 | 2026-10-15 | 2610.18672 | SMI: Ontology-Grounded Semantic IDs for Hierarchy-Aware Medical Concept Representation | cs.CL, cs.AI | [2610.18672_smi-ontology-grounded-semantic-ids-for-hierarchy-aware-medic](papers/2026-10/2610.18672_smi-ontology-grounded-semantic-ids-for-hierarchy-aware-medic) |
 | 2026-10-15 | 2610.18616 | Knowledge Graphs as Files: An Agent Harness Where Tool Creation and Tool Use Co-Evolve | cs.CL, cs.AI, cs.IR | [2610.18616_knowledge-graphs-as-files-an-agent-harness-where-tool-creati](papers/2026-10/2610.18616_knowledge-graphs-as-files-an-agent-harness-where-tool-creati) |
 | 2026-10-15 | 2610.18198 | QORH: Learning Query-Specific Ordered Rule Hypergraphs for Inductive Knowledge Graph Link Prediction | cs.AI | [2610.18198_qorh-learning-query-specific-ordered-rule-hypergraphs-for-in](papers/2026-10/2610.18198_qorh-learning-query-specific-ordered-rule-hypergraphs-for-in) |
