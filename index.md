@@ -2,6 +2,9 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-10-19 | 2610.21796 | Reflective Compositional Grounding for Natural-Language-to-SPARQL | cs.DB | [2610.21796_reflective-compositional-grounding-for-natural-language-to-s](papers/2026-10/2610.21796_reflective-compositional-grounding-for-natural-language-to-s) |
+| 2026-10-19 | 2610.21466 | Ontology Refinement with Embeddings and LLMs: A Case Study on CASTON | cs.AI | [2610.21466_ontology-refinement-with-embeddings-and-llms-a-case-study-on](papers/2026-10/2610.21466_ontology-refinement-with-embeddings-and-llms-a-case-study-on) |
+| 2026-10-19 | 2610.21345 | OpCredit: Operation-Aware Policy Learning for Agentic Knowledge Graph Question Answering | cs.CL | [2610.21345_opcredit-operation-aware-policy-learning-for-agentic-knowled](papers/2026-10/2610.21345_opcredit-operation-aware-policy-learning-for-agentic-knowled) |
 | 2026-10-16 | 2610.19754 | Beyond Reachability: A Relation-Semantic Reasoning Framework for Biomedical Multi-hop QA | cs.CL | [2610.19754_beyond-reachability-a-relation-semantic-reasoning-framework](papers/2026-10/2610.19754_beyond-reachability-a-relation-semantic-reasoning-framework) |
 | 2026-10-16 | 2610.19549 | GraphRAG-LTM: A Layered Threat Modeling Framework for Attacks on Graph Retrieval-Augmented Generation | cs.CL | [2610.19549_graphrag-ltm-a-layered-threat-modeling-framework-for-attacks](papers/2026-10/2610.19549_graphrag-ltm-a-layered-threat-modeling-framework-for-attacks) |
 | 2026-10-16 | 2610.19131 | Plant Memory: Technical Language Processing and a Verified Maintenance Ontology for Agent-Accessible Failure Knowledge from SAP PM Work Orders | cs.AI, cs.CL | [2610.19131_plant-memory-technical-language-processing-and-a-verified-ma](papers/2026-10/2610.19131_plant-memory-technical-language-processing-and-a-verified-ma) |
