@@ -2,6 +2,10 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-10-20 | 2610.23766 | Logic-Guided Graph Denoising Diffusion Models | cs.LG | [2610.23766_logic-guided-graph-denoising-diffusion-models](papers/2026-10/2610.23766_logic-guided-graph-denoising-diffusion-models) |
+| 2026-10-20 | 2610.23317 | AgentOnto: Ontology-Guided LLM Agents for Enterprise Data Analytics | cs.AI, cs.DB | [2610.23317_agentonto-ontology-guided-llm-agents-for-enterprise-data-ana](papers/2026-10/2610.23317_agentonto-ontology-guided-llm-agents-for-enterprise-data-ana) |
+| 2026-10-20 | 2610.23304 | Designing for Imperfect Prompts: A Simulation-Based Evaluation of an LLM-Based Enterprise Data Assistant Using Knowledge Graphs | cs.HC, cs.AI, cs.DB | [2610.23304_designing-for-imperfect-prompts-a-simulation-based-evaluatio](papers/2026-10/2610.23304_designing-for-imperfect-prompts-a-simulation-based-evaluatio) |
+| 2026-10-20 | 2610.22734 | Graph Serializations for Reasoning LLMs: A Study Across Knowledge Extraction and Structural Reasoning | cs.AI | [2610.22734_graph-serializations-for-reasoning-llms-a-study-across-knowl](papers/2026-10/2610.22734_graph-serializations-for-reasoning-llms-a-study-across-knowl) |
 | 2026-10-19 | 2610.21796 | Reflective Compositional Grounding for Natural-Language-to-SPARQL | cs.DB | [2610.21796_reflective-compositional-grounding-for-natural-language-to-s](papers/2026-10/2610.21796_reflective-compositional-grounding-for-natural-language-to-s) |
 | 2026-10-19 | 2610.21466 | Ontology Refinement with Embeddings and LLMs: A Case Study on CASTON | cs.AI | [2610.21466_ontology-refinement-with-embeddings-and-llms-a-case-study-on](papers/2026-10/2610.21466_ontology-refinement-with-embeddings-and-llms-a-case-study-on) |
 | 2026-10-19 | 2610.21345 | OpCredit: Operation-Aware Policy Learning for Agentic Knowledge Graph Question Answering | cs.CL | [2610.21345_opcredit-operation-aware-policy-learning-for-agentic-knowled](papers/2026-10/2610.21345_opcredit-operation-aware-policy-learning-for-agentic-knowled) |
