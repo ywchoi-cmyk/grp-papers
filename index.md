@@ -2,6 +2,10 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-10-22 | 2610.28010 | RANGER: Retrieval Agent for Navigating Graphs with Semantic Evaluation Rewards | cs.LG | [2610.28010_ranger-retrieval-agent-for-navigating-graphs-with-semantic-e](papers/2026-10/2610.28010_ranger-retrieval-agent-for-navigating-graphs-with-semantic-e) |
+| 2026-10-22 | 2610.27637 | SCODEL: Shared Canonical Ontology Definitions for Food Entity Linking and Ontology-Grounded Recipe Knowledge Graphs | cs.AI | [2610.27637_scodel-shared-canonical-ontology-definitions-for-food-entity](papers/2026-10/2610.27637_scodel-shared-canonical-ontology-definitions-for-food-entity) |
+| 2026-10-22 | 2610.27339 | Automated Brick Schema Knowledge Graph Completion Across Buildings | cs.LG | [2610.27339_automated-brick-schema-knowledge-graph-completion-across-bui](papers/2026-10/2610.27339_automated-brick-schema-knowledge-graph-completion-across-bui) |
+| 2026-10-22 | 2610.27047 | Discrete Neural Interlingua for Ontology-Agnostic EHR Modeling | cs.CL, cs.AI, cs.LG | [2610.27047_discrete-neural-interlingua-for-ontology-agnostic-ehr-modeli](papers/2026-10/2610.27047_discrete-neural-interlingua-for-ontology-agnostic-ehr-modeli) |
 | 2026-10-21 | 2610.26528 | A Semantic Knowledge Graph Construction Pipeline for Vehicle Intention Prediction in nuScenes | cs.AI, cs.LG | [2610.26528_a-semantic-knowledge-graph-construction-pipeline-for-vehicle](papers/2026-10/2610.26528_a-semantic-knowledge-graph-construction-pipeline-for-vehicle) |
 | 2026-10-21 | 2610.26399 | How Benchmark Graph Construction Shapes Multi-Hop KG Navigation: A Controlled Audit of PathQuestion and PathQuestion-Large | cs.CL | [2610.26399_how-benchmark-graph-construction-shapes-multi-hop-kg-navigat](papers/2026-10/2610.26399_how-benchmark-graph-construction-shapes-multi-hop-kg-navigat) |
 | 2026-10-21 | 2610.25993 | Graph-to-Table Interfaces Control Relational Generalisation | cs.LG | [2610.25993_graph-to-table-interfaces-control-relational-generalisation](papers/2026-10/2610.25993_graph-to-table-interfaces-control-relational-generalisation) |
