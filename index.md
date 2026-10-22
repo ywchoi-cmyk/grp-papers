@@ -2,6 +2,7 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-10-23 | 2610.29339 | ChronoSynth: Constraint-Aware Question Synthesis over Temporal Knowledge Graphs | cs.CL, cs.AI | [2610.29339_chronosynth-constraint-aware-question-synthesis-over-tempora](papers/2026-10/2610.29339_chronosynth-constraint-aware-question-synthesis-over-tempora) |
 | 2026-10-22 | 2610.28010 | RANGER: Retrieval Agent for Navigating Graphs with Semantic Evaluation Rewards | cs.LG | [2610.28010_ranger-retrieval-agent-for-navigating-graphs-with-semantic-e](papers/2026-10/2610.28010_ranger-retrieval-agent-for-navigating-graphs-with-semantic-e) |
 | 2026-10-22 | 2610.27637 | SCODEL: Shared Canonical Ontology Definitions for Food Entity Linking and Ontology-Grounded Recipe Knowledge Graphs | cs.AI | [2610.27637_scodel-shared-canonical-ontology-definitions-for-food-entity](papers/2026-10/2610.27637_scodel-shared-canonical-ontology-definitions-for-food-entity) |
 | 2026-10-22 | 2610.27339 | Automated Brick Schema Knowledge Graph Completion Across Buildings | cs.LG | [2610.27339_automated-brick-schema-knowledge-graph-completion-across-bui](papers/2026-10/2610.27339_automated-brick-schema-knowledge-graph-completion-across-bui) |
