@@ -2,6 +2,8 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-10-27 | 2610.32781 | Every Edge Needs a Quote: Building a Quote-Grounded Knowledge Graph of Healthcare Software Adoption with Language-Model Agents | cs.CL, cs.AI, cs.IR | [2610.32781_every-edge-needs-a-quote-building-a-quote-grounded-knowledge](papers/2026-10/2610.32781_every-edge-needs-a-quote-building-a-quote-grounded-knowledge) |
+| 2026-10-27 | 2610.32725 | Ontology-Guided Knowledge Graph Construction from Structured Metadata and Climate Science Publications | cs.CL, cs.AI | [2610.32725_ontology-guided-knowledge-graph-construction-from-structured](papers/2026-10/2610.32725_ontology-guided-knowledge-graph-construction-from-structured) |
 | 2026-10-26 | 2610.31529 | An Empirical Study of Recent Large Language Models for Knowledge Graph to Text Generation on Standard Benchmarks | cs.CL | [2610.31529_an-empirical-study-of-recent-large-language-models-for-knowl](papers/2026-10/2610.31529_an-empirical-study-of-recent-large-language-models-for-knowl) |
 | 2026-10-26 | 2610.31380 | AI Risk Ontologies for the EU AI Act Compliance: AIRO, VAIR, and their Integration with DPV | cs.CY, cs.AI | [2610.31380_ai-risk-ontologies-for-the-eu-ai-act-compliance-airo-vair-an](papers/2026-10/2610.31380_ai-risk-ontologies-for-the-eu-ai-act-compliance-airo-vair-an) |
 | 2026-10-26 | 2610.31317 | SurveyGraph: Generating Academic Surveys via Methods-Entity Knowledge Graphs | cs.CL, cs.AI, cs.IR | [2610.31317_surveygraph-generating-academic-surveys-via-methods-entity-k](papers/2026-10/2610.31317_surveygraph-generating-academic-surveys-via-methods-entity-k) |
