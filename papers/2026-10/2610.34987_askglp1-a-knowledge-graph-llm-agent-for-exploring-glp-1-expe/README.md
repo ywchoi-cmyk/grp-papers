@@ -1,0 +1,16 @@
+# AskGLP1: A Knowledge Graph LLM Agent for Exploring GLP-1 Experience from Online Patient Narratives
+
+- arXiv: https://arxiv.org/abs/2610.34987  (v1, submitted 2026-10-26, updated 2026-10-26)
+- Authors: Zhaoqian Xue, Anay Somani, Siddhartha Singh, Junting Mu, Zhongyin Wang, Haozheng Liu, Ayesha Khatun, Yeaeun Kwon, Renkai Ma, Siyuan Ma, Zhe He, Danxia Yu, Lingyao Li
+- Categories: cs.CL, cs.AI, cs.SI
+- Collected: 2026-10-28 (KST)
+
+## Abstract
+
+GLP-1 medications are increasingly used for weight management, and many people share their experiences online. These narratives show why people take the drugs and what they experience, but they remain unstructured and disconnected from formal pharmacovigilance. We therefore present AskGLP1, a system that transforms online patient narratives into a knowledge graph (KG) and answers questions about medication experiences. Through an LLM-assisted pipeline grounded in the MedDRA terminology, AskGLP1 screens nearly 8.5 million Reddit posts for medication experiences and distills 163,135 of them, with 2,506 WebMD reviews, into a KG of 385,790 drug-side-effect and drug-purpose relations. We find that GLP-1 experiences are source- and drug-specific. Online narratives share the most common gastrointestinal symptoms with FAERS, but they foreground everyday burdens such as fatigue and food aversion, whereas FAERS reports more often include injection-site reactions and selected serious diagnoses such as pancreatitis. We further find that posts report less nausea and vomiting for tirzepatide than for semaglutide, more fatigue for Wegovy than Ozempic and for Zepbound than Mounjaro. Evaluations show that the agent answers with verifiable evidence and declines requests for medical advice. Our findings reveal gaps between what FAERS captures and what people report online, and they call for patient-centered approaches to pharmacovigilance. Code, prompts, and evaluation questions are available at https://github.com/ZhaoqianXue/AskGLP1.
+
+## Figure 1
+
+![Figure 1](fig1.png)
+
+Figure 1: Overview of AskGLP1. (a) Reddit posts and WebMD reviews yield drug–side-effect and drug–purpose relations, with purposes and side effects coded to MedDRA. (b) The KG links drugs to purposes and side effects and connects FAERS reports to shared drug and MedDRA PT nodes. (c) The KG-grounded agent answers a question about constipation shares across sources for Wegovy. Denominators require a retained side effect or event. Numbers and quotes are checked against tool outputs.
