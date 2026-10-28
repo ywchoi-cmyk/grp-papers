@@ -1,0 +1,16 @@
+# SFE-O: An Ontology for Knowledge-Grounded AI in Supercritical CO$_2$ Biomass Extraction and Fractionation
+
+- arXiv: https://arxiv.org/abs/2610.37123  (v1, submitted 2026-10-27, updated 2026-10-27)
+- Authors: Thomas Pallet, Mario Lezoche, Gianpaolo Leone, Daniele Pizzichini, Diego Torres, Herv{é} Panetto, M{é}lanie Glibusic
+- Categories: cs.AI
+- Collected: 2026-10-29 (KST)
+
+## Abstract
+
+Supercritical CO$_2$ extraction (CO$_2$-SFE) offers a sustainable route for recovering high-value compounds from biomass while limiting the use of conventional organic solvents, but its design and interpretation require heterogeneous knowledge spanning biomass properties, operating conditions, mass transfer, and product fractionation, typically fragmented across technical reports, engineering models, external databases, and expert practice. This paper introduces SFE-O, a modular Web Ontology Language (OWL 2) ontology for supercritical CO$_2$ biomass extraction, structured around interconnected Biomass, Process, and Product dimensions and extended with explicit representations of process topology, parameter provenance, external and internal mass-transfer phenomena, and the Constant Extraction Rate (CER) / Falling Extraction Rate (FER) mechanisms. Computational dependencies among process quantities are represented explicitly, without embedding numerical solving in the ontology, so that input, measured, computed, externally retrieved, and fitted parameters remain traceable. SFE-O reuses established semantic resources (ChEBI, QUDT, OWL-Time, PROV-O) and is evaluated through a worked example that instantiates a real pilot-scale extraction batch, a reasoner-based consistency check, and a competency-question SPARQL query. The resulting knowledge model provides a machine-actionable foundation for querying, consistency checking, and mechanistic explanation of SFE processes, and establishes a knowledge layer that could support future ontology-grounded AI reasoning, a direction this paper motivates but does not evaluate.
+
+## Figure 1
+
+![Figure 1](fig1.png)
+
+Fig. 1. Modular architecture of SFE-O and its relationships with reused or aligned external semantic resources.
