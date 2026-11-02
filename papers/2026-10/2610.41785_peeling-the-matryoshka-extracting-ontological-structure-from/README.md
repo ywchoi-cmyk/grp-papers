@@ -1,0 +1,16 @@
+# Peeling the Matryoshka: Extracting Ontological Structure from Retrieval Embeddings
+
+- arXiv: https://arxiv.org/abs/2610.41785  (v1, submitted 2026-10-30, updated 2026-10-30)
+- Authors: Eunchan Kim, Inwhee Joe
+- Categories: cs.CL, cs.IR, cs.LG
+- Collected: 2026-11-03 (KST)
+
+## Abstract
+
+Taxonomy construction is essential for knowledge-intensive NLP yet remains costly: clustering-based methods (i) need careful per-corpus tuning and yield unstable hierarchies, while LLM-based pipelines (ii) depend on expensive task-specific training that does not transfer across domains. We report an empirical finding that bears on both: in Matryoshka Representation Learning (MRL) embeddings, where each leading prefix is itself a usable, coarser vector, prefix length aligns with the coarse-to-fine granularity of gold taxonomies; shuffled- and reverse-dimension controls isolate the alignment to the learned early prefix dimensions. The pattern holds across three architecturally distinct MRL models. To test whether this regularity is usable, we introduce PEEL (Peeling Embeddings to Extract Latent ontologies): a minimal probe over these frozen embeddings, trained once with an order-embedding objective that represents hierarchy as vector containment; a minimum spanning arborescence then decodes taxonomic DAGs. Using only a concept vocabulary (no documents), PEEL recovers taxonomic DAGs with high structural fidelity on two OLLM benchmarks, transferring to a new domain with no target-edge supervision. The end-to-end OLLM pipeline, which jointly discovers concepts and induces structure from document corpora, is reported as a cross-task reference. Pre-trained retrieval embeddings encode a decodable granularity gradient; a minimal probe renders it as explicit parent-child (is-a) structure.
+
+## Figure 1
+
+![Figure 1](fig1.png)
+
+Figure 1: Relative advantage of MRL prefix truncation over two controls, by embedding dimension, on Wikipedia and arXiv at the deepest gold taxonomic level. y = log2(MRL÷control kNN purity); y=0 is parity with the control. Solid = vs. shuffled control (dimension ordering destroyed); dotted = vs. reverse control (last-k tail dimensions). Colors denote three architecturally distinct MRL models (Nomic, jina-v3, Qwen3). All curves rise above parity and peak within the early dimensions; at full dimensionality the prefix equals the complete embedding, so the controls coincide by construction.
