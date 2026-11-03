@@ -2,6 +2,9 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-04 | 2611.02842 | NIR: Approximate Neural Instance Retrieval for ALCIQ | cs.LG | [2611.02842_nir-approximate-neural-instance-retrieval-for-alciq](papers/2026-11/2611.02842_nir-approximate-neural-instance-retrieval-for-alciq) |
+| 2026-11-04 | 2611.01733 | Less but Sufficient: Relation Knowledge Selects Compact Knowledge-Graph Contexts, and What External Checks Can and Cannot Catch | cs.CL | [2611.01733_less-but-sufficient-relation-knowledge-selects-compact-knowl](papers/2026-11/2611.01733_less-but-sufficient-relation-knowledge-selects-compact-knowl) |
+| 2026-11-04 | 2611.01643 | CREDO: Evidence-Conditioned Credit Assignment for Temporal Reasoning Agents | cs.LG, cs.AI, cs.CL | [2611.01643_credo-evidence-conditioned-credit-assignment-for-temporal-re](papers/2026-11/2611.01643_credo-evidence-conditioned-credit-assignment-for-temporal-re) |
 | 2026-11-03 | 2611.01276 | OntoDoc: Automatically Generating Ontology Resource Descriptions | cs.AI, cs.IR | [2611.01276_ontodoc-automatically-generating-ontology-resource-descripti](papers/2026-10/2611.01276_ontodoc-automatically-generating-ontology-resource-descripti) |
 | 2026-11-03 | 2611.00128 | SPARQLcirc: Probabilistic Query Evaluation with Provenance Circuits | cs.DB, cs.AI | [2611.00128_sparqlcirc-probabilistic-query-evaluation-with-provenance-ci](papers/2026-10/2611.00128_sparqlcirc-probabilistic-query-evaluation-with-provenance-ci) |
 | 2026-11-03 | 2610.41785 | Peeling the Matryoshka: Extracting Ontological Structure from Retrieval Embeddings | cs.CL, cs.IR, cs.LG | [2610.41785_peeling-the-matryoshka-extracting-ontological-structure-from](papers/2026-10/2610.41785_peeling-the-matryoshka-extracting-ontological-structure-from) |

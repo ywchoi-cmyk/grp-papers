@@ -1,0 +1,16 @@
+# Less but Sufficient: Relation Knowledge Selects Compact Knowledge-Graph Contexts, and What External Checks Can and Cannot Catch
+
+- arXiv: https://arxiv.org/abs/2611.01733  (v1, submitted 2026-11-01, updated 2026-11-01)
+- Authors: Seunghui Jwa, Minsu Oh, Sangwoo Hong, Yeo Chan Yoon
+- Categories: cs.CL
+- Collected: 2026-11-04 (KST)
+
+## Abstract
+
+Large language models (LLMs) read knowledge-graph facts ranked by relevance, leaving open whether they suffice or conflict. Our checks use relation knowledge, written by hand or learned from training questions labelled with their relation paths. It selects a compact context of facts yielding an answer, and derives it; a derivability check tests whether an answer follows, a consistency check whether facts conflict, and a validation-chosen routing gate decides where the derived answer replaces the LLM's. Seven open LLMs read the compact context better in exact match than relevance-ranked facts; on ComplexWebQuestions (CWQ) they match SubgraphRAG's facts at a quarter of the prompt tokens, and stronger LLMs read SubgraphRAG's better. Where the routing gate passes, ours leads SubgraphRAG's in exact match in all 53 LLM, benchmark and prompt settings. A precision gate, returning the derived answer only when the check passes with exactly one derived entity, answered 18 and 5 percent of held-out WebQSP and CWQ questions in a pre-specified test, right for 90 and 96 percent. The consistency check judges facts by path evidence only where another path joins their entities, true of 2.5 percent of named-entity facts in our compact WebQSP and CWQ contexts.
+
+## Figure 1
+
+![Figure 1](fig1.png)
+
+Figure 1: Overview. (a) Two of eleven facts form a compact sufficient context, from which the rules derive the answer. (b) The check’s result and the derived set’s size feed the routing gate, chosen on validation questions, which returns the derived answer or the LLM’s; the precision gate, a separate policy, returns the derived answer only where the check passes with one answer; the consistency check is a variant used in the contradiction experiments, where a flagged context ends in an abstention. (c) A deleted fact leaves no answer to derive, so the derivability check catches it. The false fact that s is a parent of m is caught by the consistency check because a second path, the true fact sister(s, m), also joins s and m and contradicts it; few selected facts have a second path (Section 6). A wrong fact already in the graph, such as a needed fact whose object we replaced before selection, almost always escapes both checks once selected. (d) The lift of a word for a relation is how many times as often the relation lies on the annotated paths of training questions containing the word as on those of all training questions: ethnicity lies on all 15 paths of questions with “ethnicity” and on 2.5 percent of all paths, a lift of 40.1. The path whose relations are exactly those the words name passes (✗: they differ); its shaded end is the derived answer. (e) Each of the 10 training questions most similar to the question votes for its annotated chain with its cosine similarity as weight; spouse_s, spouse gets 89 percent of the total weight (its vote share), above the 60 percent threshold, and is followed.
