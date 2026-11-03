@@ -1,0 +1,14 @@
+# SPARQLcirc: Probabilistic Query Evaluation with Provenance Circuits
+
+- arXiv: https://arxiv.org/abs/2611.00128  (v1, submitted 2026-10-29, updated 2026-10-29)
+- Authors: Jingcheng Wu, Ratan Bahadur Thapa, Daniel Hernández, Steffen Staab
+- Categories: cs.DB, cs.AI
+- Collected: 2026-11-03 (KST)
+
+## Abstract
+
+Probabilistic query evaluation (PQE) computes the probability of every answer of a query over a tuple-independent probabilistic knowledge graph. We study exact PQE for SPARQL over graphs accessed through SPARQL 1.1 endpoints. Shared triples among the derivations of an answer make exact PQE #P-hard in general. Knowledge compilation of the Boolean provenance of every answer yields exact probabilities, and the provenance formulas of different answers can share subformulas. We propose SPARQLcirc, which rewrites a SPARQL query into CONSTRUCT queries that name every gate by its content, so that the results of independent queries form one Boolean provenance circuit for all answers. The rewriting covers joins, unions, projection, filters, OPTIONAL, difference, and transitive closures. SPARQLcirc compiles the circuit and computes the exact probability of every answer by weighted model counting. For the evaluation, we draw random probabilities for the triples of WatDiv and gMark and the statements of Wikidata and evaluate the CONSTRUCT queries on GraphDB, Fuseki, and Oxigraph. The ratio of the end-to-end time of PQE with SPARQLcirc to that of PQE by compiling the provenance expressions of the SPARQL provenance rewriting NPCS decreases with the number of derivations.
+
+## Figure 1
+
+Figure 1: 추출 실패 (PDF 참조)
