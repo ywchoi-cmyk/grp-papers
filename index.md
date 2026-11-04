@@ -2,6 +2,8 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-05 | 2611.04899 | Knowledge Graph Lakehouse: A Cloud-Native Architecture for Managing Enterprise Knowledge Graphs at Scale | cs.DB | [2611.04899_knowledge-graph-lakehouse-a-cloud-native-architecture-for-ma](papers/2026-11/2611.04899_knowledge-graph-lakehouse-a-cloud-native-architecture-for-ma) |
+| 2026-11-05 | 2611.04809 | RAHC: Rule-Augmented Hyper-Relational Knowledge Graph Completion for Materials Synthesis | cs.AI | [2611.04809_rahc-rule-augmented-hyper-relational-knowledge-graph-complet](papers/2026-11/2611.04809_rahc-rule-augmented-hyper-relational-knowledge-graph-complet) |
 | 2026-11-04 | 2611.02842 | NIR: Approximate Neural Instance Retrieval for ALCIQ | cs.LG | [2611.02842_nir-approximate-neural-instance-retrieval-for-alciq](papers/2026-11/2611.02842_nir-approximate-neural-instance-retrieval-for-alciq) |
 | 2026-11-04 | 2611.01733 | Less but Sufficient: Relation Knowledge Selects Compact Knowledge-Graph Contexts, and What External Checks Can and Cannot Catch | cs.CL | [2611.01733_less-but-sufficient-relation-knowledge-selects-compact-knowl](papers/2026-11/2611.01733_less-but-sufficient-relation-knowledge-selects-compact-knowl) |
 | 2026-11-04 | 2611.01643 | CREDO: Evidence-Conditioned Credit Assignment for Temporal Reasoning Agents | cs.LG, cs.AI, cs.CL | [2611.01643_credo-evidence-conditioned-credit-assignment-for-temporal-re](papers/2026-11/2611.01643_credo-evidence-conditioned-credit-assignment-for-temporal-re) |
