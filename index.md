@@ -2,6 +2,9 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-06 | 2611.06682 | SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents | cs.LG | [2611.06682_securegard-dynamic-ontology-guided-governance-for-secure-too](papers/2026-11/2611.06682_securegard-dynamic-ontology-guided-governance-for-secure-too) |
+| 2026-11-06 | 2611.06481 | ArcRAG: Agentic Compositional Retrieval over Knowledge Graphs | cs.CL, cs.AI, cs.IR | [2611.06481_arcrag-agentic-compositional-retrieval-over-knowledge-graphs](papers/2026-11/2611.06481_arcrag-agentic-compositional-retrieval-over-knowledge-graphs) |
+| 2026-11-06 | 2611.05877 | When Does Better Confidence Improve a Knowledge-Graph Audit? | cs.CL | [2611.05877_when-does-better-confidence-improve-a-knowledge-graph-audit](papers/2026-11/2611.05877_when-does-better-confidence-improve-a-knowledge-graph-audit) |
 | 2026-11-05 | 2611.04899 | Knowledge Graph Lakehouse: A Cloud-Native Architecture for Managing Enterprise Knowledge Graphs at Scale | cs.DB | [2611.04899_knowledge-graph-lakehouse-a-cloud-native-architecture-for-ma](papers/2026-11/2611.04899_knowledge-graph-lakehouse-a-cloud-native-architecture-for-ma) |
 | 2026-11-05 | 2611.04809 | RAHC: Rule-Augmented Hyper-Relational Knowledge Graph Completion for Materials Synthesis | cs.AI | [2611.04809_rahc-rule-augmented-hyper-relational-knowledge-graph-complet](papers/2026-11/2611.04809_rahc-rule-augmented-hyper-relational-knowledge-graph-complet) |
 | 2026-11-04 | 2611.02842 | NIR: Approximate Neural Instance Retrieval for ALCIQ | cs.LG | [2611.02842_nir-approximate-neural-instance-retrieval-for-alciq](papers/2026-11/2611.02842_nir-approximate-neural-instance-retrieval-for-alciq) |
