@@ -2,6 +2,9 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-09 | 2611.08315 | Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation | cs.AI, cs.CL, cs.LG | [2611.08315_benchmarking-large-language-models-on-heterogeneous-cognitiv](papers/2026-11/2611.08315_benchmarking-large-language-models-on-heterogeneous-cognitiv) |
+| 2026-11-09 | 2611.07780 | Bridging Structure and Semantics: Knowledge Graph Verification via Triple-to-Text Alignment | cs.CL, cs.AI | [2611.07780_bridging-structure-and-semantics-knowledge-graph-verificatio](papers/2026-11/2611.07780_bridging-structure-and-semantics-knowledge-graph-verificatio) |
+| 2026-11-09 | 2611.07342 | Selective Retrieval Routing for Multi-Violation Knowledge Graph Repair | cs.DB, cs.AI | [2611.07342_selective-retrieval-routing-for-multi-violation-knowledge-gr](papers/2026-11/2611.07342_selective-retrieval-routing-for-multi-violation-knowledge-gr) |
 | 2026-11-06 | 2611.06682 | SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents | cs.LG | [2611.06682_securegard-dynamic-ontology-guided-governance-for-secure-too](papers/2026-11/2611.06682_securegard-dynamic-ontology-guided-governance-for-secure-too) |
 | 2026-11-06 | 2611.06481 | ArcRAG: Agentic Compositional Retrieval over Knowledge Graphs | cs.CL, cs.AI, cs.IR | [2611.06481_arcrag-agentic-compositional-retrieval-over-knowledge-graphs](papers/2026-11/2611.06481_arcrag-agentic-compositional-retrieval-over-knowledge-graphs) |
 | 2026-11-06 | 2611.05877 | When Does Better Confidence Improve a Knowledge-Graph Audit? | cs.CL | [2611.05877_when-does-better-confidence-improve-a-knowledge-graph-audit](papers/2026-11/2611.05877_when-does-better-confidence-improve-a-knowledge-graph-audit) |
