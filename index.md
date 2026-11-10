@@ -2,6 +2,8 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-10 | 2611.10906 | SCorPion: A Strategic, Controllable and Personified Conversational Companion | cs.CL | [2611.10906_scorpion-a-strategic-controllable-and-personified-conversati](papers/2026-11/2611.10906_scorpion-a-strategic-controllable-and-personified-conversati) |
+| 2026-11-10 | 2611.10838 | Learning Biological Hierarchies in Single-Cell Foundation Models | cs.LG, cs.AI, q-bio.QM | [2611.10838_learning-biological-hierarchies-in-single-cell-foundation-mo](papers/2026-11/2611.10838_learning-biological-hierarchies-in-single-cell-foundation-mo) |
 | 2026-11-10 | 2611.09658 | Differentially Private GraphRAG: Protecting Relation Connectivity and Semantics | cs.CR, cs.AI | [2611.09658_differentially-private-graphrag-protecting-relation-connecti](papers/2026-11/2611.09658_differentially-private-graphrag-protecting-relation-connecti) |
 | 2026-11-10 | 2611.09414 | Typed-Centrality Grounding for Agentic GraphRAG: A Symbolic Approach for Agentic Reasoning | cs.AI | [2611.09414_typed-centrality-grounding-for-agentic-graphrag-a-symbolic-a](papers/2026-11/2611.09414_typed-centrality-grounding-for-agentic-graphrag-a-symbolic-a) |
 | 2026-11-10 | 2611.09282 | Ontology-Driven Control of Conversational Agents with a Use-Case for Job Interview Practice | cs.AI | [2611.09282_ontology-driven-control-of-conversational-agents-with-a-use](papers/2026-11/2611.09282_ontology-driven-control-of-conversational-agents-with-a-use) |
