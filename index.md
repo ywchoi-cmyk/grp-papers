@@ -2,6 +2,11 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-12 | 2611.14050 | Ontology-Guided Knowledge Graph Construction and Robust Evidence Retrieval for Indian Knowledge Systems | cs.IR | [2611.14050_ontology-guided-knowledge-graph-construction-and-robust-evid](papers/2026-11/2611.14050_ontology-guided-knowledge-graph-construction-and-robust-evid) |
+| 2026-11-12 | 2611.14037 | From Show Programs to Linked Data | cs.IR | [2611.14037_from-show-programs-to-linked-data](papers/2026-11/2611.14037_from-show-programs-to-linked-data) |
+| 2026-11-12 | 2611.13850 | Taxonomy-Agnostic Neurosymbolic Grounding of Robot Kinematics | cs.AI, cs.RO | [2611.13850_taxonomy-agnostic-neurosymbolic-grounding-of-robot-kinematic](papers/2026-11/2611.13850_taxonomy-agnostic-neurosymbolic-grounding-of-robot-kinematic) |
+| 2026-11-12 | 2611.13487 | The WoW: A Large-Scale World Knowledge Corpus for Full-Lifecycle LLM Training | cs.AI | [2611.13487_the-wow-a-large-scale-world-knowledge-corpus-for-full-lifecy](papers/2026-11/2611.13487_the-wow-a-large-scale-world-knowledge-corpus-for-full-lifecy) |
+| 2026-11-12 | 2611.13196 | From Process Models to Composable Agentic Workflows: Combining BPMN, Agents and Enterprise Knowledge | cs.AI, cs.MA | [2611.13196_from-process-models-to-composable-agentic-workflows-combinin](papers/2026-11/2611.13196_from-process-models-to-composable-agentic-workflows-combinin) |
 | 2026-11-11 | 2611.12114 | OGDA: Ontology-Grounded Data Agents for Reliable Analysis over Heterogeneous Data Lakes | cs.AI, cs.CL | [2611.12114_ogda-ontology-grounded-data-agents-for-reliable-analysis-ove](papers/2026-11/2611.12114_ogda-ontology-grounded-data-agents-for-reliable-analysis-ove) |
 | 2026-11-11 | 2611.12095 | From Fluent Text to Ontology-Compatible Definitions: A Quality-Control Agentic Workflow | cs.AI | [2611.12095_from-fluent-text-to-ontology-compatible-definitions-a-qualit](papers/2026-11/2611.12095_from-fluent-text-to-ontology-compatible-definitions-a-qualit) |
 | 2026-11-11 | 2611.11802 | HiddenPathQA: A Benchmark for Knowledge Graph Question Answering When Questions Hide Their Paths | cs.CL, cs.AI | [2611.11802_hiddenpathqa-a-benchmark-for-knowledge-graph-question-answer](papers/2026-11/2611.11802_hiddenpathqa-a-benchmark-for-knowledge-graph-question-answer) |
