@@ -2,6 +2,10 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-16 | 2611.16267 | Causals: An Open Knowledge Graph for Research on Causal Reasoning | cs.AI | [2611.16267_causals-an-open-knowledge-graph-for-research-on-causal-reaso](papers/2026-11/2611.16267_causals-an-open-knowledge-graph-for-research-on-causal-reaso) |
+| 2026-11-16 | 2611.15904 | HeriKGQA: Grounded Knowledge-Graph Question Answering over Cultural Heritage Sensor Data | cs.CL, cs.AI, cs.DB | [2611.15904_herikgqa-grounded-knowledge-graph-question-answering-over-cu](papers/2026-11/2611.15904_herikgqa-grounded-knowledge-graph-question-answering-over-cu) |
+| 2026-11-16 | 2611.15467 | AutoOntic: Automatic Ontology Induction from Text for Knowledge Graph Construction | cs.CL, cs.AI, cs.LG | [2611.15467_autoontic-automatic-ontology-induction-from-text-for-knowled](papers/2026-11/2611.15467_autoontic-automatic-ontology-induction-from-text-for-knowled) |
+| 2026-11-16 | 2611.15108 | Typed Knowledge over Constructive Institutions: A Proof-Relevant Type Theory for Verified Science | cs.LO, cs.AI, cs.CL | [2611.15108_typed-knowledge-over-constructive-institutions-a-proof-relev](papers/2026-11/2611.15108_typed-knowledge-over-constructive-institutions-a-proof-relev) |
 | 2026-11-12 | 2611.14050 | Ontology-Guided Knowledge Graph Construction and Robust Evidence Retrieval for Indian Knowledge Systems | cs.IR | [2611.14050_ontology-guided-knowledge-graph-construction-and-robust-evid](papers/2026-11/2611.14050_ontology-guided-knowledge-graph-construction-and-robust-evid) |
 | 2026-11-12 | 2611.14037 | From Show Programs to Linked Data | cs.IR | [2611.14037_from-show-programs-to-linked-data](papers/2026-11/2611.14037_from-show-programs-to-linked-data) |
 | 2026-11-12 | 2611.13850 | Taxonomy-Agnostic Neurosymbolic Grounding of Robot Kinematics | cs.AI, cs.RO | [2611.13850_taxonomy-agnostic-neurosymbolic-grounding-of-robot-kinematic](papers/2026-11/2611.13850_taxonomy-agnostic-neurosymbolic-grounding-of-robot-kinematic) |
