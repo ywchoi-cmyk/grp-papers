@@ -2,6 +2,7 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-18 | 2611.20306 | Ontology-Compiled Control Barrier Functions for Heterogeneous Robot Teams | cs.RO, cs.LG | [2611.20306_ontology-compiled-control-barrier-functions-for-heterogeneou](papers/2026-11/2611.20306_ontology-compiled-control-barrier-functions-for-heterogeneou) |
 | 2026-11-17 | 2611.19871 | Interactive Structured Environment Scaling for Large Language Model Agentic Reasoning | cs.AI, cs.LG | [2611.19871_interactive-structured-environment-scaling-for-large-languag](papers/2026-11/2611.19871_interactive-structured-environment-scaling-for-large-languag) |
 | 2026-11-17 | 2611.18998 | Model Maps: A Documentation Framework for Tracing Foundation Model Ancestry and Understanding AI Entanglement | cs.CY, cs.AI | [2611.18998_model-maps-a-documentation-framework-for-tracing-foundation](papers/2026-11/2611.18998_model-maps-a-documentation-framework-for-tracing-foundation) |
 | 2026-11-17 | 2611.17963 | Toward Universal Translatability: On the Statistical Ontology of Generative AI | cs.CL | [2611.17963_toward-universal-translatability-on-the-statistical-ontology](papers/2026-11/2611.17963_toward-universal-translatability-on-the-statistical-ontology) |
