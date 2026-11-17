@@ -2,6 +2,8 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-17 | 2611.17963 | Toward Universal Translatability: On the Statistical Ontology of Generative AI | cs.CL | [2611.17963_toward-universal-translatability-on-the-statistical-ontology](papers/2026-11/2611.17963_toward-universal-translatability-on-the-statistical-ontology) |
+| 2026-11-17 | 2611.17466 | Use-case-driven ontology modeling with the NeOn methodology for ambient assisted living | cs.DB, cs.AI | [2611.17466_use-case-driven-ontology-modeling-with-the-neon-methodology](papers/2026-11/2611.17466_use-case-driven-ontology-modeling-with-the-neon-methodology) |
 | 2026-11-16 | 2611.16267 | Causals: An Open Knowledge Graph for Research on Causal Reasoning | cs.AI | [2611.16267_causals-an-open-knowledge-graph-for-research-on-causal-reaso](papers/2026-11/2611.16267_causals-an-open-knowledge-graph-for-research-on-causal-reaso) |
 | 2026-11-16 | 2611.15904 | HeriKGQA: Grounded Knowledge-Graph Question Answering over Cultural Heritage Sensor Data | cs.CL, cs.AI, cs.DB | [2611.15904_herikgqa-grounded-knowledge-graph-question-answering-over-cu](papers/2026-11/2611.15904_herikgqa-grounded-knowledge-graph-question-answering-over-cu) |
 | 2026-11-16 | 2611.15467 | AutoOntic: Automatic Ontology Induction from Text for Knowledge Graph Construction | cs.CL, cs.AI, cs.LG | [2611.15467_autoontic-automatic-ontology-induction-from-text-for-knowled](papers/2026-11/2611.15467_autoontic-automatic-ontology-induction-from-text-for-knowled) |
