@@ -2,6 +2,8 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-20 | 2611.25254 | Plan your Self-Adaptation! Ontology-Mediated Task and Architecture Co-adaptation Planning for Robots | cs.RO, cs.AI | [2611.25254_plan-your-self-adaptation-ontology-mediated-task-and-archite](papers/2026-11/2611.25254_plan-your-self-adaptation-ontology-mediated-task-and-archite) |
+| 2026-11-20 | 2611.25229 | LSP-RAG: Latent Scoring Perspectives for Knowledge Graph Retrieval-Augmented Generation | cs.IR | [2611.25229_lsp-rag-latent-scoring-perspectives-for-knowledge-graph-retr](papers/2026-11/2611.25229_lsp-rag-latent-scoring-perspectives-for-knowledge-graph-retr) |
 | 2026-11-20 | 2611.24552 | NaviGATE: Noise-Aware Dual-View Generation for Multimodal Knowledge Graph Reasoning | cs.AI | [2611.24552_navigate-noise-aware-dual-view-generation-for-multimodal-kno](papers/2026-11/2611.24552_navigate-noise-aware-dual-view-generation-for-multimodal-kno) |
 | 2026-11-18 | 2611.21823 | TUSI: A Citation-Grounded Graph-Based Benchmark | cs.CL, cs.AI | [2611.21823_tusi-a-citation-grounded-graph-based-benchmark](papers/2026-11/2611.21823_tusi-a-citation-grounded-graph-based-benchmark) |
 | 2026-11-18 | 2611.20306 | Ontology-Compiled Control Barrier Functions for Heterogeneous Robot Teams | cs.RO, cs.LG | [2611.20306_ontology-compiled-control-barrier-functions-for-heterogeneou](papers/2026-11/2611.20306_ontology-compiled-control-barrier-functions-for-heterogeneou) |
