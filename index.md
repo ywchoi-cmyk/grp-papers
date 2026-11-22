@@ -2,6 +2,9 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-23 | 2611.26261 | Similarity-based OSF Logic for Flexible SPARQL Query Answering | cs.AI, cs.DB, cs.LO | [2611.26261_similarity-based-osf-logic-for-flexible-sparql-query-answeri](papers/2026-11/2611.26261_similarity-based-osf-logic-for-flexible-sparql-query-answeri) |
+| 2026-11-23 | 2611.26062 | GenSPARQL: A Generative Extension of SPARQL for Incomplete Knowledge Graphs | cs.DB, cs.AI | [2611.26062_gensparql-a-generative-extension-of-sparql-for-incomplete-kn](papers/2026-11/2611.26062_gensparql-a-generative-extension-of-sparql-for-incomplete-kn) |
+| 2026-11-23 | 2611.25898 | Verifiable Logic in Medical LLMs: A Critical Review of Agentic Clinical Reasoning Optimization and Neuro-Symbolic Grounding | cs.CL, cs.AI, cs.CY | [2611.25898_verifiable-logic-in-medical-llms-a-critical-review-of-agenti](papers/2026-11/2611.25898_verifiable-logic-in-medical-llms-a-critical-review-of-agenti) |
 | 2026-11-20 | 2611.25254 | Plan your Self-Adaptation! Ontology-Mediated Task and Architecture Co-adaptation Planning for Robots | cs.RO, cs.AI | [2611.25254_plan-your-self-adaptation-ontology-mediated-task-and-archite](papers/2026-11/2611.25254_plan-your-self-adaptation-ontology-mediated-task-and-archite) |
 | 2026-11-20 | 2611.25229 | LSP-RAG: Latent Scoring Perspectives for Knowledge Graph Retrieval-Augmented Generation | cs.IR | [2611.25229_lsp-rag-latent-scoring-perspectives-for-knowledge-graph-retr](papers/2026-11/2611.25229_lsp-rag-latent-scoring-perspectives-for-knowledge-graph-retr) |
 | 2026-11-20 | 2611.24552 | NaviGATE: Noise-Aware Dual-View Generation for Multimodal Knowledge Graph Reasoning | cs.AI | [2611.24552_navigate-noise-aware-dual-view-generation-for-multimodal-kno](papers/2026-11/2611.24552_navigate-noise-aware-dual-view-generation-for-multimodal-kno) |
