@@ -2,6 +2,8 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-24 | 2611.29596 | Similarity-Constrained Reweighting for Complex Query Answering on Knowledge Graphs | cs.AI, cs.LG | [2611.29596_similarity-constrained-reweighting-for-complex-query-answeri](papers/2026-11/2611.29596_similarity-constrained-reweighting-for-complex-query-answeri) |
+| 2026-11-24 | 2611.29470 | GraphSeer: Multimodal Knowledge Graph Relational Image Retrieval with MLLMs | cs.CL | [2611.29470_graphseer-multimodal-knowledge-graph-relational-image-retrie](papers/2026-11/2611.29470_graphseer-multimodal-knowledge-graph-relational-image-retrie) |
 | 2026-11-24 | 2611.27835 | Auditable Financial Knowledge Graphs: Schema-Driven Construction and Intrinsic Quality Evaluation | cs.AI, cs.CE | [2611.27835_auditable-financial-knowledge-graphs-schema-driven-construct](papers/2026-11/2611.27835_auditable-financial-knowledge-graphs-schema-driven-construct) |
 | 2026-11-24 | 2611.27734 | AutoOntologyBench: A Task-Grounded Benchmark for Agentic Knowledge Engineering | cs.CL | [2611.27734_autoontologybench-a-task-grounded-benchmark-for-agentic-know](papers/2026-11/2611.27734_autoontologybench-a-task-grounded-benchmark-for-agentic-know) |
 | 2026-11-24 | 2611.27350 | GRACE: Controlled Evidence Interventions for Diagnosing and Improving Knowledge Integration in GraphRAG | cs.AI | [2611.27350_grace-controlled-evidence-interventions-for-diagnosing-and-i](papers/2026-11/2611.27350_grace-controlled-evidence-interventions-for-diagnosing-and-i) |
