@@ -1,0 +1,16 @@
+# Coherence by Construction: Synthesizing CTI Knowledge Graphs and the Formal Limits of Coherence Validation
+
+- arXiv: https://arxiv.org/abs/2611.26717  (v1, submitted 2026-11-19, updated 2026-11-19)
+- Authors: Tanzimul Alam Fahim, Mohammad Arif Hossain
+- Categories: cs.AI
+- Collected: 2026-11-24 (KST)
+
+## Abstract
+
+Synthesizing relational training data such as knowledge graphs with a large language model typically emits structured objects one at a time, which keeps each object valid but leaves the relationships between them ungrounded. We study an alternative paradigm, generation by simulation: rather than describing a relational artifact, we simulate a process that produces it and take the artifact to be its causal record. Language-model agents propose intent and a deterministic referee resolves outcomes against an explicit world model, so a relation is emitted only when the event it represents occurs, making coherence a property of construction. We instantiate the paradigm for cyber threat intelligence knowledge graphs in the STIX 2.1 standard with three engines, among them an evolutionary engine applying language-model genetic operators to structured graph genomes, sharing a deterministic compiler that makes malformed and dangling output unrepresentable. We prove referential closure, causal grounding, and identifier stability, an ablation localizes each to the referee and world model rather than the policy, and two independent LLM judges reproduce the rubric's engine ranking. Our central result is cautionary, and we prove it: a validator reading any graph feature set a structure-matched random graph can reproduce is uninformative about coherence for a coherence-by-construction generator. Using Erdős-Rényi controls we realize the theorem four times, as structural separation, embedding transfer, inductive link prediction, and real-data augmentation each reward a triviality rather than coherence; we give the mechanism behind each and the conditions a valid benchmark must meet.
+
+## Figure 1
+
+![Figure 1](fig1.png)
+
+Fig. 1: The two generation paradigms and the validation suite: schema-forced per-object generation (left) versus generation by simulation in Mirage (right); Section IV details the data flow.
