@@ -2,6 +2,8 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-25 | 2611.31771 | SPARQL-Planned Single-Hop Traversal over a Live Knowledge Graph for Multi-Hop Question Answering | cs.CL, cs.AI | [2611.31771_sparql-planned-single-hop-traversal-over-a-live-knowledge-gr](papers/2026-11/2611.31771_sparql-planned-single-hop-traversal-over-a-live-knowledge-gr) |
+| 2026-11-25 | 2611.31614 | Tablassert: Declarative Extraction of Knowledge Graphs from Biomedical Tables | cs.CL | [2611.31614_tablassert-declarative-extraction-of-knowledge-graphs-from-b](papers/2026-11/2611.31614_tablassert-declarative-extraction-of-knowledge-graphs-from-b) |
 | 2026-11-24 | 2611.30334 | When Does Reasoning Help Entity Disambiguation? Small LLMs In-Domain and Under Shift | cs.CL | [2611.30334_when-does-reasoning-help-entity-disambiguation-small-llms-in](papers/2026-11/2611.30334_when-does-reasoning-help-entity-disambiguation-small-llms-in) |
 | 2026-11-24 | 2611.30218 | Ontology-Compiled 2D Clinical State Fields with Bidirectional Diffusion Encoders for Zero-Training Cross-Ontology Medical Coding | cs.CL, cs.IR, cs.LG | [2611.30218_ontology-compiled-2d-clinical-state-fields-with-bidirectiona](papers/2026-11/2611.30218_ontology-compiled-2d-clinical-state-fields-with-bidirectiona) |
 | 2026-11-24 | 2611.29596 | Similarity-Constrained Reweighting for Complex Query Answering on Knowledge Graphs | cs.AI, cs.LG | [2611.29596_similarity-constrained-reweighting-for-complex-query-answeri](papers/2026-11/2611.29596_similarity-constrained-reweighting-for-complex-query-answeri) |
