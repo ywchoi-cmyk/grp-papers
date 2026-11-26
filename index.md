@@ -2,6 +2,7 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-26 | 2611.33497 | CA-RAG: Constraint-Aligned Retrieval for Structurally Faithful Long-Form Generation | cs.AI, cs.CL, cs.IR | [2611.33497_ca-rag-constraint-aligned-retrieval-for-structurally-faithfu](papers/2026-11/2611.33497_ca-rag-constraint-aligned-retrieval-for-structurally-faithfu) |
 | 2026-11-25 | 2611.31771 | SPARQL-Planned Single-Hop Traversal over a Live Knowledge Graph for Multi-Hop Question Answering | cs.CL, cs.AI | [2611.31771_sparql-planned-single-hop-traversal-over-a-live-knowledge-gr](papers/2026-11/2611.31771_sparql-planned-single-hop-traversal-over-a-live-knowledge-gr) |
 | 2026-11-25 | 2611.31614 | Tablassert: Declarative Extraction of Knowledge Graphs from Biomedical Tables | cs.CL | [2611.31614_tablassert-declarative-extraction-of-knowledge-graphs-from-b](papers/2026-11/2611.31614_tablassert-declarative-extraction-of-knowledge-graphs-from-b) |
 | 2026-11-24 | 2611.30334 | When Does Reasoning Help Entity Disambiguation? Small LLMs In-Domain and Under Shift | cs.CL | [2611.30334_when-does-reasoning-help-entity-disambiguation-small-llms-in](papers/2026-11/2611.30334_when-does-reasoning-help-entity-disambiguation-small-llms-in) |
