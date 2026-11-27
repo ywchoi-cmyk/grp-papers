@@ -2,6 +2,8 @@
 
 | Collected | arXiv ID | Title | Categories | Folder |
 |---|---|---|---|---|
+| 2026-11-27 | 2611.34708 | From Shared Patterns to Individual Evidence: Two-Stage Reasoning for Emerging Entities in Temporal Knowledge Graphs | cs.AI, cs.CL, cs.LG | [2611.34708_from-shared-patterns-to-individual-evidence-two-stage-reason](papers/2026-11/2611.34708_from-shared-patterns-to-individual-evidence-two-stage-reason) |
+| 2026-11-27 | 2611.34436 | Grounding User Preferences in Shared Multimodal Concepts for Recommendation | cs.IR | [2611.34436_grounding-user-preferences-in-shared-multimodal-concepts-for](papers/2026-11/2611.34436_grounding-user-preferences-in-shared-multimodal-concepts-for) |
 | 2026-11-26 | 2611.34247 | Did the Model Forecast It, or Already Know It? Evaluating Large Language Models for Novel Drug-Target Prioritisation with a Temporal Knowledge-Graph Oracle | cs.AI, q-bio.QM | [2611.34247_did-the-model-forecast-it-or-already-know-it-evaluating-larg](papers/2026-11/2611.34247_did-the-model-forecast-it-or-already-know-it-evaluating-larg) |
 | 2026-11-26 | 2611.33497 | CA-RAG: Constraint-Aligned Retrieval for Structurally Faithful Long-Form Generation | cs.AI, cs.CL, cs.IR | [2611.33497_ca-rag-constraint-aligned-retrieval-for-structurally-faithfu](papers/2026-11/2611.33497_ca-rag-constraint-aligned-retrieval-for-structurally-faithfu) |
 | 2026-11-25 | 2611.31771 | SPARQL-Planned Single-Hop Traversal over a Live Knowledge Graph for Multi-Hop Question Answering | cs.CL, cs.AI | [2611.31771_sparql-planned-single-hop-traversal-over-a-live-knowledge-gr](papers/2026-11/2611.31771_sparql-planned-single-hop-traversal-over-a-live-knowledge-gr) |
